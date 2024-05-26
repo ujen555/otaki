@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+  --primary: #12bca2;
+  --secondary: #6d15df;
+}
+html{
+  font-size: 10px;
+}
+h1,h2,h3 {
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: 'Poppins';
+  background: #ECEEFB;
+  box-sizing: border-box;
+
+}
+nav {
+  background: #7867F0;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav a {
+  color: #f2f2f2;
+  margin: 10px;
+  display: inline-block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #B1A3D9;
+}
+nav h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.wrapper{
+  padding: 20px 15%;
+}
+
+.bluePill{
+  background-color: #7867F0;
+  padding: 4px 10px;
+  border-radius: 50px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  outline: none;
+  border: none;
+}
+
+
+/* Home */
+.orderList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 25px;
+  
+}
+/* ORDERS CARD */
+.orderCard{
+  padding: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.orderCard:hover{
+  background-color: #F6EBFF;
+}
+.orderCard__header{
+  border-bottom:1px solid #B6A8DE ;
+  padding-bottom: 6px;
+}
+
+.orderId{
+  font-size: 1.2rem;
+  line-height: 120%;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: capitalize;
+}
+.orderName{
+  margin-top: 8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.orderCard__body{
+  padding: 8px 0px;
+  font-size: 1.4rem;
+}
+
+.orderCard__footer{
+  padding-top: 10px;
+
+}
+.orderCard__footer__actions{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  margin-bottom: 0px;
+  gap: 10px;
+}
+.orderCard__footer .baseBtn{
+  border-radius: 100%;
+  color: white;
+  font-size: 1.6rem;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.orderCard__footer .editBtn{
+  background-color: #68BAA5;
+  color: white;
+}
+.orderCard__footer .baseBtn:hover{
+
+  background-color: #000E84;
+  
+}
+.priceTag{
+  font-size: 1.4rem;
+}
+
+
+.deleteBtn{
+  background-color: #F8002C;
+}
+
+/* create */
+/* forms  */
+.create__form{
+   padding: 25px;
+   border-radius: 20px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   background-color: white;
+   display: grid;
+   flex-direction: column;
+   gap: 20px;
+   max-width: 768px;
+   margin: 0 auto;
+}
+
+.create__title{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 10px;
+  color: #494554;
+}
+
+.create__form__item{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create__form label{
+  font-size: 1.3rem;
+  line-height: 120%;
+  font-weight: 500;
+  display: block;
+}
+
+.create__form .form-control{
+  width: 100%;
+  background-color: transparent;
+  color: #494554;
+  border: 1px solid #AEA9BA;
+  font-size: 1.4rem;
+  height: 43px;
+  line-height: 180%;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: none;
+  border-radius: 6px;
+  display: block;
+  appearance: none;
+}
+.create__form .form-control:focus{
+  outline: none;
+  border: 1px solid #7867F0;
+  box-shadow:  rgba(110, 52, 173, 0.2) 0px 8px 24px;
+}
+
+
+.create__form__footer .bluePill{
+  border: none;
+  font-size: 1.6rem;
+  padding: 10px 18px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.create__form__footer .bluePill:hover{
+  background-color: #000E84;
+}
